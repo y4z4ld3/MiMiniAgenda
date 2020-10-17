@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/capa_segundo_view"
+    tools:context=".ConfirmarDatos">
+
+    <LinearLayout
+        android:id="@+id/capa_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/flecha_atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icons8_back_48" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/segundoView"
+                android:paddingLeft="@dimen/margen_layer"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/title_size"
+                android:paddingStart="@dimen/margen_layer" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/tres_puntos"
+                android:paddingLeft="@dimen/margen_layer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/menu_6"
+                android:paddingStart="@dimen/margen_layer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/capa_toolbar"
+        android:paddingLeft="@dimen/margen_layer"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titilo_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloConfirmar"
+            android:textSize="@dimen/title_size"
+            android:padding="@dimen/title_size"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:padding="@dimen/title_size"
+            android:id="@+id/tv_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hintNombre"
+            android:textSize="@dimen/title_size"
+            android:gravity="left" />
+        <TextView
+            android:padding="@dimen/title_size"
+            android:id="@+id/tv_fecha_nac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hintFechaNac"
+            android:textSize="@dimen/title_size"
+            android:gravity="left" />
+        <TextView
+            android:padding="@dimen/title_size"
+            android:id="@+id/tv_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hintTelefono"
+            android:textSize="@dimen/title_size"
+            android:gravity="left" />
+        <TextView
+            android:padding="@dimen/title_size"
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hintEmail"
+            android:textSize="@dimen/title_size"
+            android:gravity="left" />
+        <TextView
+            android:padding="@dimen/title_size"
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/descr_height"
+            android:text="@string/hintDescripcion"
+            android:inputType="textMultiLine"
+            android:singleLine="true"
+            android:textSize="@dimen/title_size"  />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Editar"
+            android:padding="@dimen/title_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/descr_height"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/textoBotonEditar" />
+    </LinearLayout>
+</RelativeLayout>
+

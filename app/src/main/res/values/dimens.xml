@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activitiy_horizontal_margin">16dp</dimen>
+    <dimen name="activitiy_vertical_margin">16dp</dimen>
+    <dimen name="margen_layer">12dp</dimen>
+    <dimen name="descr_height">140dp</dimen>
+    <dimen name="appbar_height">40dp</dimen>
+    <dimen name="descr_width">330dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="title_width">320dp</dimen>
+</resources>

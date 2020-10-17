@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/capa_inicial"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:id="@+id/capa_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/flecha_atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icons8_back_48" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/primerView"
+                android:paddingLeft="@dimen/margen_layer"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/title_size"
+                android:paddingStart="@dimen/margen_layer" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/tres_puntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/menu_6"
+                 />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/capa_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/capa_toolbar"
+        android:paddingLeft="@dimen/margen_layer"
+        android:paddingRight="@dimen/margen_layer"
+        android:paddingTop="@dimen/margen_layer"
+        android:paddingBottom="@dimen/margen_layer">
+
+                <EditText
+                    android:id="@+id/edtxt_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/hintNombre"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHighlight="@color/colorTexto" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editTextDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/hintFechaNac"
+                        android:inputType="date"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:importantForAutofill="no" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/img_btn_calendario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icons8_calendar_24" />
+
+
+                 </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtxt_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/hintTelefono"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColorHighlight="@color/colorTexto" />
+
+                <EditText
+                    android:id="@+id/edtxt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/hintEmail"
+                    android:inputType="textEmailSubject"
+                    android:singleLine="true"
+                    android:textColorHighlight="@color/colorTexto" />
+
+                <EditText
+                    android:id="@+id/edtxt_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/descr_height"
+                    android:autofillHints=""
+                    android:gravity="top"
+                    android:hint="@string/hintDescripcion"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true"
+                    android:textColorHighlight="@color/colorTexto" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/capa_btn_siguiente"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/textoBoton"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

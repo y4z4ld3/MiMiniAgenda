@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mi Mini Agenda</string>
+    <string name="hintNombre">Nombre Completo</string>
+    <string name="hintFechaNac">Fecha de Nacimiento</string>
+    <string name="hintTelefono">Número Telefónico</string>
+    <string name="hintEmail">Correo Electrónico</string>
+    <string name="hintDescripcion">Descripción Contacto</string>
+    <string name="textoBoton">Siguiente</string>
+    <string name="primerView">Editar Datos</string>
+    <string name="segundoView">Confirmar Datos</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="tituloConfirmar">Por favor confirmar los siguientes datos:</string>
+    <string name="textoBotonEditar">Editar Datos</string>
+    <string name="pNombre">Nombre</string>
+    <string name="pFechaNac">FechaNac</string>
+    <string name="pTelefono">Telefono</string>
+    <string name="pEmail">Email</string>
+    <string name="pDescripcion">Descripcion</string>
+    <string name="msgDatosFaltantes">Datos Incompletos</string>
+</resources>
